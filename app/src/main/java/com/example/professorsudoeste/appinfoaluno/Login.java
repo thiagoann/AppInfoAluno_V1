@@ -18,7 +18,7 @@ import android.widget.Toast;
 public class Login extends AppCompatActivity {
 
 
-EditText edt_Name, edt_Password;
+EditText edt_Username, edt_Password;
 Button btn_login;
 
 
@@ -45,7 +45,7 @@ InfoAlunoDB db = new InfoAlunoDB(this) {
             @Override
             public void onClick(View view) {
                 //Verificar se o campo username e password foram preenchidos
-                if (edt_Name.equals("")){
+                if (edt_Username.equals("")){
                     valida = false;
                     Toast.makeText(getApplicationContext(), " Digite o usuário ", Toast.LENGTH_LONG).show();
                 }
