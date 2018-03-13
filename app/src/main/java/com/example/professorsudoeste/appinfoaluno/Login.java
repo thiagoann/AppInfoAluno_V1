@@ -51,7 +51,7 @@ InfoAlunoDB db = new InfoAlunoDB(this) {
                 }
                 if (edt_Password.equals("")){
                     valida = false;
-                    Toast.makeText(getApplicationContext(), " Digite o usuário ", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), " Digite a senha ", Toast.LENGTH_LONG).show();
                 }
 
             }
