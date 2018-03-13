@@ -27,14 +27,20 @@ public class MédiaFinal {
             status = " Reprovado ";
     }
 
-    public boolean recu(){
-
+    public boolean  recuAluno(){
+        boolean recu = false;
 
         if (grade1 == 0 ) {
             recu = true;
+        }
         if(grade2 == 0){
-            recu = false;
-            }
+            recu = true;
+        }
+        if(grade3 == 0){
+            recu = true;
+        }
+        if(grade4 == 0){
+            recu = true;
         }
         return recu;
     }
