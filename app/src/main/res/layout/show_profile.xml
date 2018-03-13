@@ -31,22 +31,22 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/txv_ID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:hint="ID" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/txv_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:hint="Name" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/txv_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:hint="Email" />
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
