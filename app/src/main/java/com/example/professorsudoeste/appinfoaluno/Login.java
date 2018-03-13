@@ -1,6 +1,7 @@
 package com.example.professorsudoeste.appinfoaluno;
 
 import android.content.pm.ApplicationInfo;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
@@ -22,7 +23,17 @@ Button btn_login;
 
 
 
-InfoAlunoDB db = new ApplicationInfo(this);
+InfoAlunoDB db = new InfoAlunoDB(this) {
+    @Override
+    public void onCreate(SQLiteDatabase sqLiteDatabase) {
+
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+
+    }
+};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,7 +53,7 @@ InfoAlunoDB db = new ApplicationInfo(this);
                     valida = false;
                     Toast.makeText(getApplicationContext(), " Digite o usuário ", Toast.LENGTH_LONG).show();
                 }
-                
+
             }
         });
      }
